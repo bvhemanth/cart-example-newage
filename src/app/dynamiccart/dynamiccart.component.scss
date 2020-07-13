@@ -1,6 +1,21 @@
 .cart-wrapper{
     width:100%;
-    a{
+    p{
+        text-align:right;
+    }
+    .table{
+        width: 50%;
+        th{
+            font-weight: normal;
+        }
         float:right;
+        font-size: 12px;
+        border:1px solid #ddd;
+        td{
+            button{
+                font-size: 12px;
+                padding: 1px 3px;
+            }
+        }
     }
 }
