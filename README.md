@@ -1,22 +1,23 @@
 Used tech-stack and methodologies
 
-#Angular 10
+# Angular 10
 
-#SCSS
+# SCSS
 
-#BEM
+# BEM
 
-#Classes , modules
+# Classes , modules
 
-#Routing
+# Routing
 
-#Communication Between components
+# Communication Between components
 
 
+Process to see the project
 
-Download 
-npm i
-ng serve 
+# Download 
+# npm i
+# ng serve --open
 
 
 # Cart
