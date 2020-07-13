@@ -21,9 +21,16 @@ export class DynamiccartComponent implements OnInit {
 
   onCartItemDeleted(event) {
     const id = event.target.getAttribute('id');
-    this.cartItemDeleted.emit({
+
+    let cartItemDeleted=({
         productId: id
       });
+
+      this.cartItemDeleted.emit({
+        productId: cartItemDeleted.productId
+      });
+
+   
   } 
 
 }

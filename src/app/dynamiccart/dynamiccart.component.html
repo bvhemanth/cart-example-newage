@@ -30,6 +30,15 @@
                     <td>
                         {{item.quantity * item.price}} INR
                     </td>
+                    <td>
+                        <button type="button"
+                        class="btn btn-default"
+                        aria-label="Left Align"
+                        id={{item.id}}
+                        (click)="onCartItemDeleted($event)">
+                            Remove
+                        </button>
+                    </td>
                 </tr>
             </table>
             

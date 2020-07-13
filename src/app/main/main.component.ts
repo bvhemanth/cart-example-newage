@@ -17,14 +17,18 @@ export class MainComponent implements OnInit {
     productPrice: number
   }>();
 
+  @Output() cartItemDeleted = new EventEmitter<{
+    productId: number
+  }>();
+
   product: Product[] = [
     new Product(1,' Duster CVT', 15, 'assets/duster.jpeg'),
     new Product(2,'Laptop', 5, 'assets/lap.jpeg'),
     new Product(3,'Tiago AMT', 10 , 'assets/tiago.jpg'),
     new Product(4,'Tesla Y', 35, 'https://www.tesla.com/sites/default/files/images/blogs/models_blog_post.jpg'),
     new Product(5,' Nexon AMT', 10 , 'assets/nexon.jpg'),
-    new Product(6,' Duster CVT (Diesel)', 15, 'assets/duster.jpeg'),
-  ]
+    new Product(6,' Duster CVT (Diesel)', 15, 'assets/duster.jpeg')
+  ];
 
   constructor() { }
 
@@ -77,6 +81,12 @@ export class MainComponent implements OnInit {
     //   });
 
     
+  }
+
+  onCartItemDeleted(productData:{productId: number}) {
+    const index = this.cartItems.findIndex( elem => elem.id == productData.productId )
+    this.cartItems.splice(index,1);
+    //this.updateCartTotal();
   }
   
 }
