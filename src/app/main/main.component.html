@@ -1,0 +1,19 @@
+<app-dynamiccart [cartItems]="cartItems"></app-dynamiccart>
+<div class="row product-wrapper">
+
+    <div class="col-sm-6 col-md-4 col-lg-3"
+      *ngFor="let item of product">
+      
+        <div class="thumbnail product-item">
+            <img [src]="item.imageUrl" alt="{{item.name}}">
+            <div class="product-item__caption">
+                <h3>{{item.name}}</h3>
+                <span class="product-item__price"> Price {{item.price}} INR</span>
+                <button class="btn product-item__button" role="button" id={{item.id}} (click)="onCartUpdated($event)">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+
+    </div>    
+</div>

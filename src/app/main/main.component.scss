@@ -1,0 +1,43 @@
+.product-wrapper { 
+    /*border: 1px solid grey;*/
+    margin-top: 20px;
+    color: lightseagreen;
+    padding: 10px;
+    text-align: center;
+    .product-item
+    {
+        border:1px solid #ddd;
+        border-radius: 3px;
+        max-width: 90%;
+        box-shadow: 1px 2px 4px #ddd;
+        padding:5px;
+        // bem scss
+        &__caption {
+            font-size: 12px;
+            color: #000;
+        }
+        &__caption h3{
+            font-size: 15px;
+        }
+        &__price{
+            color: #e04c30;
+            font-weight: bold;;
+        }
+        &__button{
+            background-color: #e04c30;
+            color:#fff;
+            font-size: 12px;
+            padding: 4px 12px;
+            margin-left:10px;
+        }
+        &:hover{
+            box-shadow: 3px 2px 7px #ddd;
+        }
+        img{
+            max-width: 90%;
+            max-height: 200px;
+        }
+    }
+}
+
+
