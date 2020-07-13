@@ -1,0 +1,19 @@
+
+<table class="table" border=1> 
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Location</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of otableDatatochild; let i=index">
+            <td>{{data.name}}</td>
+            <td>{{data.companyName}}</td>
+            <td>{{data.location}}</td>
+            <td>{{data.gender}}</td>
+        </tr>
+    </tbody>
+</table>
