@@ -1,10 +1,15 @@
 Used tech-stack and methodologies
 
 #Angular 10
-#SCSS,
-#BEM,
+
+#SCSS
+
+#BEM
+
 #Classes , modules
+
 #Routing
+
 #Communication Between components
 
 
