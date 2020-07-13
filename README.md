@@ -13,6 +13,12 @@ Used tech-stack and methodologies
 #Communication Between components
 
 
+
+Download 
+npm i
+ng serve 
+
+
 # Cart
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
