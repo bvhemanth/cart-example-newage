@@ -13,11 +13,10 @@ Used tech-stack and methodologies
 # Communication Between components
 
 
-Process to see the project
-
-# Download 
-# npm i
-# ng serve --open
+----Process to see the project
+ Download 
+ npm i
+ ng serve --open
 
 
 # Cart
