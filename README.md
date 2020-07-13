@@ -18,6 +18,8 @@
 Download from git
 
 git clone https://github.com/bvhemanth/cart-example-newage.git
+
 npm i
+
 ng serve --open
 
