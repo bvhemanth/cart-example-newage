@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { DynamiccartComponent } from './dynamiccart/dynamiccart.component';
 import { TableInteractionComponent } from './table-interaction/table-interaction.component';
 import { MaintableComponent } from './table-interaction/maintable/maintable.component';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { MaintableComponent } from './table-interaction/maintable/maintable.comp
     HeaderComponent,
     DynamiccartComponent,
     TableInteractionComponent,
-    MaintableComponent
+    MaintableComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

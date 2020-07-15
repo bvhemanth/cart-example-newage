@@ -1,0 +1,21 @@
+.list{
+    &__eachone{
+        font-size: 13px;
+        border:1px solid #ddd;
+        padding:6px;
+        box-shadow: 2px 3px 4px #ddd;
+        margin-top:10px;
+    }
+    &__delete{
+        max-width: 100px;
+        font-size: 11px;
+        float:right;
+    }
+    &__empty{
+        text-align: center;
+        font-style: capitalize;
+    }
+}
+button{
+    width: 100%;
+}

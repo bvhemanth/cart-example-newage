@@ -1,0 +1,23 @@
+<!-- <p>todo works!</p> -->
+
+<h3>Hemanth TO Do List</h3>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <input type="text" class="form-control" [(ngModel)]="newTask" placeholder="Type Something..."/>
+        <button class="btn btn-danger" (click)="addNew()">Add</button>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+<div class="row list">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <div *ngFor="let list of olistItems;let i = index;" class="list__eachone">
+            {{list.taskName}} <button class="list__delete" (click)="deleteTask(i)">Delete</button>
+        </div>
+        <div class="list__empty"*ngIf="olistItems.length==0">
+                No Tasks to do....
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>

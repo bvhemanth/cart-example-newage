@@ -7,4 +7,9 @@ table{
             padding-bottom: 5px;
         }
     }
+    tbody{
+        tr:nth-child(even){
+            background-color: #ddd;
+        }
+    }
 }
